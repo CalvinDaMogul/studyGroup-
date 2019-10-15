@@ -15,12 +15,12 @@ namespace studyNotes1
             var RemoveSpaceFromNewInput = newInput.Replace(" ", "");
             var compositeChar = "";
 
-            for (var k = 0; k < RemoveSpaceFromNewInput.Length; k++)
+            for (var i = 0; i < RemoveSpaceFromNewInput.Length; i++)
             {
                 int j = 0; var tmp = "";
                 while (j <= k)
                 {
-                    tmp += string.Concat((j == 0) ? char.ToUpper(RemoveSpaceFromNewInput[k]) : char.ToLower(RemoveSpaceFromNewInput[k]));
+                    tmp += string.Concat((j == 0) ? char.ToUpper(RemoveSpaceFromNewInput[i]) : char.ToLower(RemoveSpaceFromNewInput[i]));
                     j++;
                 }
                 compositeChar += tmp + '-';
